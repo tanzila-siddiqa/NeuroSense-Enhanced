@@ -1,0 +1,27 @@
+{
+  "loss": 0.4566973464563489,
+  "accuracy": 0.9,
+  "precision": 0.8,
+  "recall": 1.0,
+  "f1": 0.8888888888888888,
+  "confusion_matrix": [
+    [
+      20,
+      4
+    ],
+    [
+      0,
+      16
+    ]
+  ],
+  "roc_auc": 0.96875,
+  "n_test": 40,
+  "task": "meander",
+  "train_images": 184,
+  "val_images": 40,
+  "test_images": 40,
+  "train_participants": 46,
+  "val_participants": 10,
+  "test_participants": 10,
+  "augmented_train_images": 0
+}

@@ -1,0 +1,54 @@
+{
+  "model_type": "logistic_regression + SelectKBest + Sigmoid calibration",
+  "best_model": "logistic_regression",
+  "feature_count": 78,
+  "classes": [
+    "healthy",
+    "parkinson"
+  ],
+  "best_params": {
+    "classifier__C": 0.01,
+    "selector__k": "all"
+  },
+  "cv_roc_auc": 0.8563492063492063,
+  "test_metrics": {
+    "accuracy": 0.6470588235294118,
+    "precision": 0.6666666666666666,
+    "recall": 0.5,
+    "f1": 0.5714285714285714,
+    "confusion_matrix": [
+      [
+        7,
+        2
+      ],
+      [
+        4,
+        4
+      ]
+    ],
+    "roc_auc": 0.6527777777777778
+  },
+  "probability_calibrated": true,
+  "calibration_method": "sigmoid",
+  "screening_bands": {
+    "lower": {
+      "min": 0.0,
+      "max": 0.4,
+      "label": "Lower screening score"
+    },
+    "intermediate": {
+      "min": 0.4,
+      "max": 0.7,
+      "label": "Intermediate screening score"
+    },
+    "higher": {
+      "min": 0.7,
+      "max": 1.0,
+      "label": "Higher screening score"
+    }
+  },
+  "train_samples": 64,
+  "test_samples": 17,
+  "seed": 42,
+  "screening_disclaimer": "AI screening score only. This result is not a medical diagnosis and should not be used as a substitute for professional medical evaluation."
+}

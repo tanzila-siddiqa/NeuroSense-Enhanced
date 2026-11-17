@@ -1,0 +1,29 @@
+{
+  "accuracy": 0.9318181818181818,
+  "precision": 1.0,
+  "recall": 0.85,
+  "f1": 0.918918918918919,
+  "confusion_matrix": [
+    [
+      24,
+      0
+    ],
+    [
+      3,
+      17
+    ]
+  ],
+  "class_labels": [
+    "healthy",
+    "parkinson"
+  ],
+  "n_test": 44,
+  "roc_auc": 1.0,
+  "task": "spiral",
+  "train_images": 180,
+  "val_images": 40,
+  "test_images": 44,
+  "train_participants": 31,
+  "val_participants": 9,
+  "test_participants": 11
+}

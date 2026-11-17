@@ -1,0 +1,2 @@
+ALTER TABLE public.dataset_versions ADD COLUMN IF NOT EXISTS is_current boolean NOT NULL DEFAULT false;
+CREATE UNIQUE INDEX IF NOT EXISTS dataset_versions_one_current_per_modality ON public.dataset_versions (modality) WHERE is_current;
